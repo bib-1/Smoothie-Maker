@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Smoothie Machine</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="javascript.js" defer></script>
+</head>
+  <body>
+      <!-- Main Block -->
+    <div class="main-block">
+        <!-- Header - keeps on changing -->
+        <h1>Smothee Order Form</h1>
+        <!-- Form where all the inputs and output element are contained -->
+        <form class="show">
+            <!--form contents -->
+            <div class="info">
+            <input required class="fname" id="fullname" type="text" placeholder="Full name">
+            <input required type="text" id="phone" placeholder="Phone number">
+                <select id="time">
+                    <option disabled selected >Pick up time</option>
+                    <option >8:00am</option>
+                    <option>9:00am</option>
+                    <option>10:00am</option>
+                    <option>12:00pm</option>
+                    <option>1:00pm</option>
+                    <option>3:00pm</option>
+                    <option>6:00pm</option>
+                    <option>7:00pm</option>
+                </select>    
+                <select id="size">
+                    <option disabled selected>Size of Smoothie</option>
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>  
+                    
+                <select id="liquid">
+                    <option disabled selected>You want your Smoothie made with?</option>
+                    <option>Water</option>
+                    <option>Dairy Milk</option>
+                    <option>Almond Milk</option>
+                    <option>Yougurt</option>
+                </select>              
+                <div class="inputs fruit">
+                    <p>Select the fruits you want on Smoothie</p>
+                    <p>
+                        <input type="checkbox" name="Banana">
+                        <label>Banana</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Straberry">
+                        <label >Straberry</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Mango">
+                        <label >Mango</label>
+                    </p>            
+                </div>
+                <div class="inputs toppings">
+                    <p >Extra Toppings:</p>
+                    <p>
+                        <input type="checkbox" name = "Peanut Butter">
+                        <label >Peanut Butter</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Chocolate Chips" >
+                        <label >Chocolate Chips</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="Maple Syrup" >
+                        <label>Maple Syrup</label>
+                    </p>  
+                </div> 
+                <div class="inputs ice">
+                    <p>Do you want ice added on your Smoothie?</p>
+                    <input type="radio" name="ice" value="Yes">
+                    <label >Yes</label><br>
+                    <input type="radio" name="ice" value="No">
+                    <label >No</label><br>
+                </div>
+                <div class="inputs sweetener">
+                    <p>Any Sweetners?</p>
+                    <input type="radio" name="sweet" value="Honey">
+                    <label >Honey</label><br>
+                    <input type="radio" name="sweet" value="Sugar">   
+                    <label >Sugar</label><br>
+                    <input type="radio" name="sweet" value="No sweetners">
+                    <label >No added sweet</label><br>
+                </div>
+                <input class="fname" type="text" id="note" placeholder="Additional Notes:">
+            </div>
+            <!-- Element to disply the result -->
+            <div class="result">
+                <div class="details">
+                </div>
+                <div class="image">            
+                </div>
+        </div>
+        </form>
+        <!-- Button to submit the entry and create detailed page-->
+        <button class="button">Submit</button>
+    </div>
+  </body>
+</html>

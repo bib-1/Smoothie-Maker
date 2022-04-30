@@ -1,0 +1,111 @@
+      /* Whole page */
+      html, body {
+        background-image: url("./smoothie-background.webp");
+        height: 100%;
+      }
+      /* body input and select element */
+      body, input, select { 
+        padding: 0;
+        margin: 0;
+        outline: none;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 16px;
+        color: #eee;
+      }
+      /* heading design */
+      h1{
+        font-weight: 400;
+        font-size: 32px;
+        color: black;
+      }
+      /* displaying contents vertically */
+      .main-block, .info{
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* for main block */
+      .main-block {
+        justify-content: center;
+        align-items: center;
+        width: 100%; 
+        min-height: 100%;
+      }
+      /* for form */
+      form {
+        width: 80%; 
+        padding: 25px;
+        margin-bottom: 20px;
+        background: rgba(0, 0, 0, 1);
+      }
+
+      /* input elements and select inputs*/
+      input, select {
+        padding: 5px;
+        margin-bottom: 20px;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid #eee;
+      }
+      
+      /* creating border and background for options */
+      option {
+        background: black; 
+        border: none;
+      }
+
+      /* For extending the input to whole width */
+      input.fname{
+        width: 100%;
+      }
+
+      /* fot those with .inputs class have only occupies half width */
+      .inputs{
+        width:47.5%;
+      }
+      .inputs > p{
+        padding: 5px;
+        margin: 0px;
+      }
+
+      /* Designing button */
+      button {
+        display: block;
+        width: 200px;
+        padding: 10px;
+        margin: 20px auto 0;
+        border: none;
+        border-radius: 5px; 
+        background: #1c87c9; 
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+      }
+      button:hover {
+        background: #095484;
+      }
+
+      /* The element with contains the description after user submits the buttom */
+      .result{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+
+      /*for making the page responsive  */
+      @media (min-width: 568px) {
+      .info {
+      flex-flow: row wrap;
+      justify-content: space-between;
+      }
+      input {
+      width: 46%;
+      }
+      input.fname {
+      width: 100%;
+      }
+
+      select {
+      width: 48%;
+      }
+      }
